@@ -1,2 +1,2 @@
 # bookbot
-Static analyser of books
+BookBot is my first project!
