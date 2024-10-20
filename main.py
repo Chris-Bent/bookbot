@@ -1,14 +1,16 @@
 def main():
     bookPath = "books/frankenstein.txt"
-    print(f"--- Report on {bookPath} ---")
+    print(f"-------------------- Report on {bookPath} --------------------")
     text = getText(bookPath)
     numWords = numOfWords(text)
     characterString = text.lower() 
     characterCount = countCharacters(characterString)
-    characterList = [{key: value} for key, value in characterCount.items()]
-    #characterList.sort(reverse=True, key=sortOn)
-    print(f"{numWords} words found in the document")
-    print(f"The {characterList} character was found number times")
+    #characterList = [{key: value} for key, value in characterCount.items()]
+    print(f"--- {numWords} words found in the document ---")
+    for key, value in characterCount.items(): 
+        print(f"--- The {key}: character was found {value} times ---")
+
+    print("-------------------- End report --------------------")
 
 # Take text and split into words, return the length of the list.
 def numOfWords(text):
@@ -35,10 +37,5 @@ def countCharacters(characterString):
     return characterCount
      
 
-# Take dict and return value of key
-"""
-def sortOn(dict):
-    return dict[]
-"""
 
 main()
