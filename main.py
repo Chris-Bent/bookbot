@@ -12,6 +12,8 @@ def main():
 
     print("-------------------- End report --------------------")
 
+    # specifiedWord = input("Are you looking for a particular word or words?\nEnter it here: ")
+
 # Take text and split into words, return the length of the list.
 def numOfWords(text):
     words = text.split()
@@ -36,6 +38,8 @@ def countCharacters(characterString):
              characterCount[char] = 1
     return characterCount
      
+# TODO: Add function to search for a specific word appearing in the selected text:
+# count how many times the word appears
 
 
 main()
