@@ -1,2 +1,4 @@
 # bookbot
-BookBot is my first project!
+Bookbot in progress....
+
+Static analysis of documents
